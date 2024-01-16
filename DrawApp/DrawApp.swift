@@ -2,16 +2,16 @@
 //  DrawAppApp.swift
 //  DrawApp
 //
-//  Created by Doroteya Galbacheva on 16.01.2024.
+//  Created by Doroteya Galbacheva on 12.12.2023.
 //
 
 import SwiftUI
 
 @main
-struct DrawAppApp: App {
+struct DrawApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DrawingView()
         }
     }
 }

@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  DrawingApp
+//  DrawApp
 //
 //  Created by Doroteya Galbacheva on 12.12.2023.
 //
@@ -22,7 +22,7 @@ struct DrawingView: View {
     @State private var selectedThickness: CGFloat = 2.0
     @State private var selectedTool: DrawingTool = .freehand
     enum DrawingTool {
-        case freehand, straightLine // Add more tools as needed
+        case freehand, straightLine
     }
     
     var body: some View {
@@ -45,12 +45,12 @@ struct DrawingView: View {
             
             HStack(spacing: 10) {
                 Picker("", selection: $selectedTool) {
-                    Image("scrible")
+                    Image("curvedLine")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, height: 30)
                     .tag(DrawingTool.freehand)
-                    Image("line.diagonal")
+                    Image("straightLine")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, height: 30)
@@ -62,7 +62,7 @@ struct DrawingView: View {
                 
                 Slider(value: $selectedThickness, in: 1...10, step: 1)
                 Button(action: clearCanvas) {
-                    Image("eraser")
+                    Image("bin")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, height: 30)

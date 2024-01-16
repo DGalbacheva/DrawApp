@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4A998592B5656C200464936 /* DrawAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A998582B5656C200464936 /* DrawAppApp.swift */; };
-		E4A9985B2B5656C200464936 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9985A2B5656C200464936 /* ContentView.swift */; };
+		E4A998592B5656C200464936 /* DrawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A998582B5656C200464936 /* DrawApp.swift */; };
+		E4A9985B2B5656C200464936 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9985A2B5656C200464936 /* DrawingView.swift */; };
 		E4A9985D2B5656C400464936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A9985C2B5656C400464936 /* Assets.xcassets */; };
 		E4A998602B5656C400464936 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A9985F2B5656C400464936 /* Preview Assets.xcassets */; };
 		E4A9986A2B5656C500464936 /* DrawAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A998692B5656C500464936 /* DrawAppTests.swift */; };
 		E4A998742B5656C500464936 /* DrawAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A998732B5656C500464936 /* DrawAppUITests.swift */; };
 		E4A998762B5656C500464936 /* DrawAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A998752B5656C500464936 /* DrawAppUITestsLaunchTests.swift */; };
+		E4A998832B56577500464936 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A998822B56577500464936 /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,8 @@
 
 /* Begin PBXFileReference section */
 		E4A998552B5656C200464936 /* DrawApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4A998582B5656C200464936 /* DrawAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAppApp.swift; sourceTree = "<group>"; };
-		E4A9985A2B5656C200464936 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E4A998582B5656C200464936 /* DrawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawApp.swift; sourceTree = "<group>"; };
+		E4A9985A2B5656C200464936 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		E4A9985C2B5656C400464936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4A9985F2B5656C400464936 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4A998652B5656C500464936 /* DrawAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		E4A9986F2B5656C500464936 /* DrawAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A998732B5656C500464936 /* DrawAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAppUITests.swift; sourceTree = "<group>"; };
 		E4A998752B5656C500464936 /* DrawAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4A998822B56577500464936 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		E4A998572B5656C200464936 /* DrawApp */ = {
 			isa = PBXGroup;
 			children = (
-				E4A998582B5656C200464936 /* DrawAppApp.swift */,
-				E4A9985A2B5656C200464936 /* ContentView.swift */,
+				E4A998582B5656C200464936 /* DrawApp.swift */,
+				E4A998822B56577500464936 /* ColorPickerView.swift */,
+				E4A9985A2B5656C200464936 /* DrawingView.swift */,
 				E4A9985C2B5656C400464936 /* Assets.xcassets */,
 				E4A9985E2B5656C400464936 /* Preview Content */,
 			);
@@ -257,8 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4A9985B2B5656C200464936 /* ContentView.swift in Sources */,
-				E4A998592B5656C200464936 /* DrawAppApp.swift in Sources */,
+				E4A9985B2B5656C200464936 /* DrawingView.swift in Sources */,
+				E4A998592B5656C200464936 /* DrawApp.swift in Sources */,
+				E4A998832B56577500464936 /* ColorPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +426,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DrawApp/Preview Content\"";
+				DEVELOPMENT_TEAM = FP73RGLRL5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -429,6 +434,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DrawApp/Preview Content\"";
+				DEVELOPMENT_TEAM = FP73RGLRL5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -457,6 +464,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
